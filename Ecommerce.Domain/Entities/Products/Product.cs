@@ -1,4 +1,8 @@
-﻿using Ecommerce.SharedLib.Domain.Comman;
+﻿using Ecommerce.Domain.Entities.Inventories;
+using Ecommerce.Domain.Entities.OrderDetails;
+using Ecommerce.Domain.Entities.ProductCategories;
+using Ecommerce.Domain.Entities.Reviews;
+using Ecommerce.SharedLib.Domain.Comman;
 using Microsoft.AspNetCore.Mvc.ViewEngines;
 using System;
 using System.Collections.Generic;
@@ -18,9 +22,9 @@ namespace Ecommerce.Domain.Entities.Products
         public int CategoryID { get; set; }
         public string ImageURL { get; set; } = string.Empty;
 
-        public ProductCategory Category { get; set; }
-        public ICollection<OrderDetail> OrderDetails { get; set; }
-        public ICollection<Inventory> Inventories { get; set; }
-        public ICollection<Review> Reviews { get; set; }
+        public ProductCategory Category { get; set; } = default!;
+        public ICollection<OrderDetail> OrderDetails { get; set; } = [];
+        public ICollection<Inventory> Inventories { get; set; } = [];
+        public ICollection<Review> Reviews { get; set; } = [];
     }
 }

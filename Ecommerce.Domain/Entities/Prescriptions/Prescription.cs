@@ -1,4 +1,5 @@
-﻿using Ecommerce.SharedLib.Domain.Comman;
+﻿using Ecommerce.Domain.Entities.Users;
+using Ecommerce.SharedLib.Domain.Comman;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace Ecommerce.Domain.Entities.Prescriptions
         public string PrescriptionImageURL { get; set; }
         public string Status { get; set; } // e.g., Pending, Approved, Rejected
 
-        public User User { get; set; }
+        public User User { get; set; } = default!;
     }
 
 }
