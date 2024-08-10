@@ -10,7 +10,6 @@ namespace Ecommerce.Domain.Entities.Inventories
 {
     public class Inventory : AduitEntity<int>
     {
-        public int InventoryID { get; set; }
         public int ProductID { get; set; }
         public int Quantity { get; set; }
         public DateTime LastRestockedDate { get; set; } = default!;

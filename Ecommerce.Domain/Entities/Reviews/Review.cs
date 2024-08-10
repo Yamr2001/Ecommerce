@@ -6,7 +6,6 @@ namespace Ecommerce.Domain.Entities.Reviews
 {
     public class Review : AduitEntity<int>
     {
-        public int ReviewID { get; set; }
         public int UserID { get; set; }
         public int ProductID { get; set; }
         public int Rating { get; set; } // Rating 1-5

@@ -10,7 +10,6 @@ namespace Ecommerce.Domain.Entities.Prescriptions
 {
     public class Prescription : AduitEntity<int>
     {
-        public int PrescriptionID { get; set; }
         public int UserID { get; set; }
         public string DoctorName { get; set; }
         public DateTime PrescriptionDate { get; set; }
