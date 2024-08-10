@@ -7,8 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
     <Folder Include="Interfaces\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ecommerce.SharedLib\Ecommerce.SharedLib.csproj" />
   </ItemGroup>
 
 </Project>
